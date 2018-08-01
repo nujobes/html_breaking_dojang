@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- http://bootstrapk.com/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            /* https://css-tricks.com/perfect-full-page-background-image/ */
+            background: url("images/Kodoku_no_Gurume_01.png") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+    </style>
+    <title>도장깨기</title>
+</head>
+
+<body>
+    <!-- nav start -->
+    <nav class="navbar navbar-inverse">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.html">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <!-- <li class="active"> -->
+                    <li>
+                        <a href="intro.html">도장깨기란?
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">Link</a>
+                    </li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;검증된 도장 리스트
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <!-- https://store.naver.com/restaurants/list?filterId=s13479290&query=TV%EB%A7%9B%EC%A7%91 -->
+                            <li>
+                                <a href="#">백종원의 3대 천왕</a>
+                            </li>
+                            <li>
+                                <a href="#">수요미식회</a>
+                            </li>
+                            <li>
+                                <a href="#">전지적 참견시점</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="https://guide.michelin.co.kr/" target="_blank">미슐랭 가이드 서울 2018</a>
+                            </li>
+                            <li>
+                                <a href="https://guide.michelin.co.kr/" target="_blank">빕 구르망</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="c_michelin_guide_seoul_2018.html">도장 목록 +</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="glyphicon glyphicon-check" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;검증중인 도장 리스트
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">사용자들의 도장 추천</a>
+                            </li>
+                            <li>
+                                <a href="#">뜨고 있는 도장들</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">당신의 도전을 기다립니다!</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder=" .....의 도장을 깨겠습니다.">
+                            </div>
+                            &nbsp;
+                            <button type="submit" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </form>
+                    </li>
+                    <li>&nbsp;&nbsp;&nbsp;</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">사용자
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;내 정보</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;내 도장 목록</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;도장깨기 후기</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;도장 북마크</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-off" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;로그아웃</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <!-- nav end -->
+
+
+    <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">미슐랭 가이드 서울 2018</div>
+
+        <!-- Table -->
+        <table class="table">
+            <tr>
+                <th>상호명</th>
+                <th>음식유형</th>
+                <th>주소</th>
+                <th>전화번호</th>
+                <th>홈페이지</th>
+                <th>등급</th>
+            </tr>
+            <tr>
+                <td>도사</td>
+                <td>이노베이티브</td>
+                <td>강남구 도산대로 67길 7 지하 1층</td>
+                <td>02-516-3672</td>
+                <td>
+                    <a href="www.dosaseoul.com" target="_blank">www.dosaseoul.com</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>곳간</td>
+                <td>한식</td>
+                <td>영등포구 여의대로 24, 전경련 회관 50층</td>
+                <td> 02-2055-4445</td>
+                <td>
+                    <a href="gotgan.modoo.at" target="_blank">gotgan.modoo.at</a>
+                </td>
+                <td>★★</td>
+            </tr>
+            <tr>
+                <td>라미띠에</td>
+                <td>프렌치</td>
+                <td>강남구 언주로 153길 7, 2층</td>
+                <td>02-546-9621</td>
+                <td>
+                    <a href="lamitie.modoo.at/" target="_blank">lamitie.modoo.at/</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>권숙수</td>
+                <td>한식</td>
+                <td>서울 강남구 압구정로 80길 37</td>
+                <td>02-542-6268</td>
+                <td>
+                    <a href="www.kwonsooksoo.com" target="_blank">www.kwonsooksoo.com</a>
+                </td>
+                <td>★★</td>
+            </tr>
+            <tr>
+                <td>리스토란테 에오</td>
+                <td>이탈리안 컨템포러리</td>
+                <td>강남구 도산대로 75길 15, 5층</td>
+                <td>02-3445-1926</td>
+                <td>
+                    <a href="www.ristoranteeo.com" target="_blank">www.ristoranteeo.com</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>개성만두 궁</td>
+                <td>만두</td>
+                <td>종로구 인사동 10길 11-3</td>
+                <td> 02-733-9240</td>
+                <td>
+                    <a href="www.koong.co.kr" target="_blank">www.koong.co.kr</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>
+                    비스트로 드 욘트빌</td>
+                <td>프렌치</td>
+                <td>강남구 선릉로 158길 13-7</td>
+                <td>02-541-1550</td>
+                <td>
+                    <a href="#" target="_blank">-</a>
+                </td>
+                <td>the plate</td>
+            </tr>
+            <tr>
+                <td>코지마</td>
+                <td>스시</td>
+                <td>강남구 압구정로 60길 21, 분더샵 6층</td>
+                <td>02-2056-1291</td>
+                <td>
+                    <a href="kojima.modoo.at" target="_blank">kojima.modoo.at</a>
+                </td>
+                <td>★★</td>
+            </tr>
+            <tr>
+                <td>라연</td>
+                <td>한식</td>
+                <td>중구 동호로 249 신라호텔 23층</td>
+                <td>02-2230-3367</td>
+                <td>
+                    <a href="www.shillahotels.com" target="_blank">www.shillahotels.com</a>
+                </td>
+                <td>★★★</td>
+            </tr>
+            <tr>
+                <td>밍글스</td>
+                <td>코리안 컨템포러리</td>
+                <td>강남구 선릉로 757</td>
+                <td>02-515-7306</td>
+                <td>
+                    <a href="www.restaurant-mingles.com" target="_blank">www.restaurant-mingles.com</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>게방 식당</td>
+                <td>게장</td>
+                <td>강남구 선릉로 131길 17</td>
+                <td>010-8479-1107</td>
+                <td>
+                    <a href="gebangsikdang.modoo.at" target="_blank">gebangsikdang.modoo.at</a>
+                </td>
+                <td>the plate</td>
+            </tr>
+            <tr>
+                <td>가온</td>
+                <td>한식</td>
+                <td>강남구 도산대로 317, 호림아트센터 M층</td>
+                <td>02-545-9845~6</td>
+                <td>
+                    <a href="www.gaonkr.com" target="_blank">www.gaonkr.com</a>
+                </td>
+                <td>★★★</td>
+            </tr>
+            <tr>
+                <td>정식당</td>
+                <td>코리안 컨템포러리</td>
+                <td>강남구 선릉로 158길 11</td>
+                <td>02-517-4654</td>
+                <td>
+                    <a href="www.jungsik.kr" target="_blank">www.jungsik.kr</a>
+                </td>
+                <td>★</td>
+            </tr>
+            <tr>
+                <td>더 그린테이블</td>
+                <td>프렌치 컨템포러리</td>
+                <td>강남구 선릉로 155길 13, 2층</td>
+                <td>2-591-2672</td>
+                <td>
+                    <a href="www.thegreentable.co.kr" target="_blank">www.thegreentable.co.kr</a>
+                </td>
+                <td>the plate</td>
+            </tr>
+            <tr>
+                <td>상호명</td>
+                <td>음식유형</td>
+                <td>지역</td>
+                <td>전화번호</td>
+                <td>
+                    <a href="#" target="_blank">홈페이지</a>
+                </td>
+                <td>★</td>
+            </tr>
+        </table>
+    </div>
+    <ul class="pagination">
+        <li class="active">
+            <a href="#">1</a>
+        </li>
+        <li>
+            <a href="#">2</a>
+        </li>
+        <li>
+            <a href="#">3</a>
+        </li>
+        <li>
+            <a href="#">4</a>
+        </li>
+        <li>
+            <a href="#">5</a>
+        </li>
+    </ul>
+</body>
+
+</html>
