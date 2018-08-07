@@ -552,3 +552,16 @@
 .navbar-inverse {
   background-image: linear-gradient(to bottom, #1c1010 0%, #222 100%);
 }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  /* background-color: $card-bg; */
+  background-clip: border-box;
+  /* border: $card-border-width solid $card-border-color; */
+  /* @include border-radius($card-border-radius); */
+
+}
