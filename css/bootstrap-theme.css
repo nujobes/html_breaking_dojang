@@ -541,6 +541,7 @@
 /* 추가 */
 
 /* 점보트론배경색수정 */
+
 .jumbotron {
   padding: 50px 50px;
   margin-top: 30px;
@@ -548,20 +549,101 @@
   color: inherit;
   background-color: rgba(0, 0, 0, 0.35);
 }
+
 /*네비수정*/
+
 .navbar-inverse {
   background-image: linear-gradient(to bottom, #1c1010 0%, #222 100%);
 }
 
 .card {
+  border: 1px solid #1e1616;
+  border-radius: 10px;
+  overflow: hidden;
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  /* background-color: $card-bg; */
-  background-clip: border-box;
-  /* border: $card-border-width solid $card-border-color; */
-  /* @include border-radius($card-border-radius); */
+  background-clip: border-box; */
+  color: #eeeeee;
+  box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  text-align: center;
+  margin: 20px 10px;
 
+  background-color: #1e1616;
 }
+
+.card-body {
+  padding: 10px 10px;
+}
+
+.card-text {
+  text-align: left;
+  color: #ffffff;
+}
+
+h2.restaurant-list-category {
+  font-size: 18px;
+  margin: 3px 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+h1.restaurant-list-title {
+  font-size: 24px;
+  margin: 5px 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+a.restaurant-list-title {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+h3.restaurant-list-address {
+  font-size: 15px;
+  margin: 3px 0px;
+  text-align: left;
+  color: #ffffff;
+}
+
+/* 로그인창 */
+/* .form-login {
+  width: 100%;
+  max-width: 400px;
+  padding: 15px;
+  margin: auto;
+
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+.form-login .checkbox {
+  font-weight: 400;
+}
+.form-login .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-login .form-control:focus {
+  z-index: 2;
+}
+.form-login input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-login input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.find_idpw {
+  font-size: 1em;
+} */

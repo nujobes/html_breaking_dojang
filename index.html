@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- http://bootstrapk.com/ -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"> -->
     <link rel="stylesheet" href="./css/bootstrap-theme.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <style>
         body {
-            /* https://css-tricks.com/perfect-full-page-background-image/ */
             background: url("images/Kodoku_no_Gurume_01.png") no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -27,42 +24,27 @@
 <body>
     <!-- nav start -->
     <nav class="navbar navbar-inverse">
-
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="main.html">
+                <a class="navbar-brand" href="index.jsp">
                     <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                 </a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <!-- <li class="active"> -->
                     <li>
-                        <a href="intro.html">도장깨기란?
+                        <a href="intro.jsp">도장깨기란?
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <!-- <li>
-                        <a href="#">Link</a>
-                    </li> -->
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                             <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;&nbsp;&nbsp;검증된 도장 리스트
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu" role="menu">
-                            <!-- https://store.naver.com/restaurants/list?filterId=s13479290&query=TV%EB%A7%9B%EC%A7%91 -->
                             <li>
-                                <a href="#">백종원의 3대 천왕</a>
+                                <a href="https://store.naver.com/restaurants/list?filterId=s13479290&query=TV%EB%A7%9B%EC%A7%91">백종원의 3대 천왕</a>
                             </li>
                             <li>
                                 <a href="#">수요미식회</a>
@@ -75,8 +57,8 @@
                                 <a href="https://guide.michelin.co.kr/" target="_blank">미슐랭 가이드 서울 2018</a>
                             </li>
                             <li>
-                                    <a href="https://guide.michelin.co.kr/" target="_blank">빕 구르망</a>
-                                </li>
+                                <a href="#" target="_blank">빕 구르망</a>
+                            </li>
                             <li class="divider"></li>
                             <li>
                                 <a href="c_michelin_guide_seoul_2018.html">도장 목록 +</a>
@@ -115,6 +97,14 @@
                         </form>
                     </li>
                     <li>&nbsp;&nbsp;&nbsp;</li>
+                    <li>
+                        <a href="intro.jsp">로그인
+                        </a>
+                    </li>
+                    <li>
+                        <a href="intro.jsp">회원가입
+                        </a>
+                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">사용자
                             <span class="caret"></span>
@@ -146,11 +136,13 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
     <!-- nav end -->
+    <script>
+        // https://css-tricks.com/perfect-full-page-background-image/
+        // document.body.style.backgroundImage = "url('images/back.jpg')";
+    </script>
 </body>
 
 </html>
